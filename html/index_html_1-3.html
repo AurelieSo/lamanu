@@ -1,0 +1,61 @@
+<!-- On précise le type du document pour le navigateur -->
+<!DOCTYPE html>
+<!-- On ouvre ensuite notre document HTML en précisant la langue utilisée dans celui-ci grâce à l'attribut "lang" -->
+<!-- On peut également préciser le sens d'écriture du document en utilisant l'attribut "dir" (pour direction) et taper "ltr" (pour le sens d'écriture commun, de gauche à droite, en anglais Left To Right) -->
+<html lang="fr" dir="ltr">
+<!-- On ouvre ensuite l'en-tête de notre document avec la balise "head", il s'agit de l'endroit où se trouvent les informations concernant le document nécessaires au navigateur pour interprêter correctement le corps de celui-ci  -->
+
+<head>
+    <!-- Cette balise meta avec l'attribut charset permet de définir le type de caractères utilisés dans le document, ici nous écrivons en latin commun donc en UTF-8 afin de prendre en compte les accents -->
+    <meta charset="UTF-8">
+    <!-- Cette balise meta va nous permettre d'adapter le contenu au format d'écran sur lequel le document est consulté -->
+    <!-- Pour détailler, la propriété "width" dans l'attribut "content" va permettre d'adapter la largeur du document à la largeur du support de consultation, quand au paramètre "initial-scale", celui-ci permet d'effectuer un zoom sur le document, s'il est établit à 1.0, aucun zoom ne sera fait -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cette balise meta permet d'adapter le contenu aux navigateurs plus restricitfs que sont internet explorer et edge -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- La balise link permet de faire le lien avec un fichier externe, ici je vais avoir besoin d'un fichier de style, je le précise donc dans l'attribut "rel" puis je donne le chemin jusqu'au fichier dans l'attribut "href" -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- La balise title permet de donner un titre au document, et donc de donner un nom à l'onglet qui sera ouvert sur votre navigateur -->
+    <title>Correction Partie 1</title>
+    <!-- Cette balise meta permet d'ajouter une description du contenu de la page, qui sera affiché dans les résultats de recherche  -->
+    <meta name="description" content="Ma description personnalisée">
+    <!-- Nous avons terminé de décrire les prérequis de notre document, nous pouvons fermer la balise "head" -->
+</head>
+<!-- Maintenant, nous pouvons ouvrir le corps de notre document, et donc commencer à modifier directement notre site -->
+
+<body>
+    <!-- h1, la balise de titre la plus haute à utiliser avant toutes les autres -->
+    <h1>Correction Partie 1</h1>
+    <!-- Comme j'ai déjà placé un h1, je peux créer un sous-titre grâce à une balise h2 -->
+    <h2>Ne pas oublier l'importance de la hiérarchie des titres !</h2>
+    <!-- La balise p, pour écrire du texte dans un bloc -->
+    <p>N'oubliez pas que dans un document, une balise h2 ne doit pas apparaître tant que vous n'avez pas de balise h1, ce
+        qui vaut pour toutes les autres balises ! Une balise h4 ne doit être présente que si vous avez déjà fait appel
+        aux balises h1, h2 et h3</p>
+    <h2>"Mais je voulais avoir un titre plus petit..."</h2>
+    <p>Et bien placez quand même votre titre dans l'ordre de la hiérarchie ! Vous pourrez modifier sa taille en CSS !
+    </p>
+    <!-- Cette balise permet de tracer un trait horizontal sur toute la largeur de l'élément dans lequel elle se trouve, en l'occurence nous nous trouvons à l'intérieur du body, le trait se fera donc sur toute la largeur de l'écran -->
+    <hr>
+    <h3>Exercice 3</h3>
+    <!-- A l'inverse de la balise ul, ol permet de créer une liste ordonnée et donc de retrouver des puces de numérotation -->
+    <ol>
+        <!-- La balise li permet d'ajouter un élément à la liste courante -->
+        <li>Janvier</li>
+        <li>Février</li>
+        <li>Mars</li>
+        <li>Avril</li>
+        <li>Mai</li>
+        <li>Juin</li>
+        <li>Juillet</li>
+        <li>Août</li>
+        <li>Septembre</li>
+        <li>Octobre</li>
+        <li>Novembre</li>
+        <li>Décembre</li>
+    </ol>
+    <hr>
+    
+</body>
+
+</html>

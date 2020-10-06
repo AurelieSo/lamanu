@@ -1,0 +1,18 @@
+.textBold{
+font-weight:bold;
+}
+
+.textItalic {
+font-style:italic;
+}
+
+.textRed {
+color:red;
+}
+
+.textGreen {
+    color:#00FF00;
+}
+
+.TableAstroList{
+border: 1px solid black;}
