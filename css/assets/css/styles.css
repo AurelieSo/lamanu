@@ -16,3 +16,39 @@ color:red;
 
 .TableAstroList{
 border: 1px solid black;}
+
+.textCenter {
+    text-align: center;
+}
+
+#titleText
+{text-align: center;}
+
+.textArial {
+    font-family: Arial
+}
+
+.backgroundBlue {
+    background-color: rgb(89, 130, 253);
+}
+
+#mybodypicture{
+    background-image: url("../images/beach.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#titleSea {
+    font-size: 120px;
+    text-align: center;
+    color: rgb(157, 213, 245);
+}
+
+#textIntro {
+    margin: 10px;
+}
+
+.paddingAndBackground {
+    padding: 10px;
+    background-color: rgb(89, 130, 253);
+}
