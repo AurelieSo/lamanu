@@ -17,6 +17,7 @@ color:red;
 .TableAstroList{
 border: 1px solid black;}
 
+<<<<<<< HEAD
 .textCenter {
     text-align: center;
 }
@@ -51,4 +52,8 @@ border: 1px solid black;}
 .paddingAndBackground {
     padding: 10px;
     background-color: rgb(89, 130, 253);
+=======
+.background {
+    background-color: blue;
+>>>>>>> 2b191783acefd59613f2e5f923229a3fe454b080
 }
