@@ -17,7 +17,6 @@ color:red;
 .TableAstroList{
 border: 1px solid black;}
 
-<<<<<<< HEAD
 .textCenter {
     text-align: center;
 }
@@ -52,8 +51,39 @@ border: 1px solid black;}
 .paddingAndBackground {
     padding: 10px;
     background-color: rgb(89, 130, 253);
-=======
-.background {
-    background-color: blue;
->>>>>>> 2b191783acefd59613f2e5f923229a3fe454b080
+}
+
+.backgroundGreen {
+    background-color: #2ecc71:
+}
+
+.backgroundBlue1 {
+    backgroundcolor: #2980b9;
+}
+.backgroundcolorRed1{
+    backgroundcolor:#e74c3c;
+}
+
+.backgroundcolorOrange1{
+    backgroundcolor: #e67e22;
+}
+
+.backgroundcolorGrey1 {
+    backgroundcolor: #95a5a6;
+}
+
+.backgroundcolorYellow {
+    backgroundcolor: #f39c32;
+}
+
+.backgroundcolorBlueGreen {
+    backgroundcolor: #16a085; 
+}
+
+.backgroundcolorOrange2 {
+    backgroundcolor: #d35400;}
+
+    .backgroundcolorDarkGrey {
+backgroundcolor: #2c3e50
+    }
 }
