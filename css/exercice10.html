@@ -5,39 +5,84 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles10.css">
     </head>
 
     <body>
         
-        
-            <legend>Votre identité</legend>
+        <div id="formTitle">
+            <legend id="formTitleText">Votre identité</legend>
+        </div>
+        <div>
             <form method="post" action ="traitement.php" class="formIdentity">
-               <p>
-                   <label for="fname">1.Nom :</label><input type="text" name="fname" id="fname" placeholder="Nom"/>
-                </p>
-                <p>
-                    <label for="lname">2.Prénom :</label><input type="text" name="lname" id="lname" placeholder="Prénom" />
-                </p>
-                <p>
-                    <label for="email">3.Adresse mail :</label><input type="text" name="email" id="email" placeholder="Adresse mail" />
-                </p>
+              <ol> 
+                  <li>
+                    <label for="fname">Nom : <label> 
+                    <input type="text" name="fname" id="fname" placeholder="Nom"/>
+                  </li>
+                <li>
+                    <label for="lname">Prénom : </label>
+                    <input type="text" name="lname" id="lname" placeholder="Prénom" />
+                </li>
+                <li>
+                    <label for="email">Adresse mail : </label>
+                    <input type="text" name="email" id="email" placeholder="Adresse mail" />
+                </li>
+                </ol>
+            </form>
+        </div>
 
-    
-<p></p>
+        <div id="formTitle">
+            <legend id="formTitleText2">Adresse de livraison</legend>
+        </div>
+        <div>
+            <form method="post" action ="traitement.php" class="formAdress">
+              <ol> 
+                  <li>
+                    <label for="adress">Adresse: <label> 
+                    <textarea name="adress" id="adress" raw="10"></textarea>
+                  </li>
+                <li>
+                    <label for="postalCode">Code Postal  <label>
+                    <input type="text" name="lname" id="lname" placeholder="Code Postal" />
+                </li>
+                <li>
+                    <label for="town">Ville : </label>
+                    <input type="text" name="town" id="town" placeholder="Ville" />
+                </li>
+                </ol>
+            </form>
+             </div>
 
+             <div id="formTitle">
+                <legend id="formTitleText3">Information de réglement</legend>
+            </div>
+            <div>
+                <form method="post" action ="traitement.php" class="formCash">
+                  <ol> 
+                      <li>
+                        <label for="fname">Type de carte bancaire<label> 
+                        <p>Visa</p><input type="radio" name="Visa" id="Visa" />
+                        <p>Mastercard</p><input type="radio" name="Mastercard" id="Mastercard" />
 
-            <div id="adress"></div>
-
-
-
-
-            <div id="cash"></div>
-
-
-
-
-        </form>
+                      </li>
+                    <li>
+                        <label for="CardNumber">Numéro de carte : </label>
+                        <input type="text" name="CardNumber" id="CardNumber" placeholder="Numéro de carte" />
+                    </li>
+                    <li>
+                        <label for="SecurityCode">Code de sécurité : </label>
+                        <input type="SecurityCode" name="SecurityCode" id="SecurityCode" placeholder="Code de sécurité" />
+                    </li>
+                    <li>
+                        <label for="NameTitular">Nom du titulaire : </label>
+                        <input type="NameTitular" name="NameTitular" id="NameTitular" placeholder="Nom du titulaire" />
+                    
+                        
+                    </li>
+                    </ol>
+                </form>
+            </div>
 
     </body>
 
