@@ -17,7 +17,7 @@
             <form method="post" action ="traitement.php" class="formIdentity">
               <ol> 
                   <li>
-                    <label for="fname">Nom : <label> 
+                    <label for="fname">Nom : </label> 
                     <input type="text" name="fname" id="fname" placeholder="Nom"/>
                   </li>
                 <li>
@@ -40,7 +40,7 @@
               <ol> 
                   <li>
                     <label for="adress">Adresse: <label> 
-                    <textarea name="adress" id="adress" raw="10"></textarea>
+                    <textarea name="adress" id="adress" rows="5" cols="20"></textarea>
                   </li>
                 <li>
                     <label for="postalCode">Code Postal  <label>
@@ -61,9 +61,9 @@
                 <form method="post" action ="traitement.php" class="formCash">
                   <ol> 
                       <li>
-                        <label for="fname">Type de carte bancaire<label> 
-                        <p>Visa</p><input type="radio" name="Visa" id="Visa" />
-                        <p>Mastercard</p><input type="radio" name="Mastercard" id="Mastercard" />
+                        Type de carte bancaire
+                        <div>Visa<input type="radio" name="bankCard" id="Visa" /></div>
+                        <div>Mastercard<input type="radio" name="bankCard" id="Mastercard" /></div>
 
                       </li>
                     <li>
@@ -87,3 +87,4 @@
     </body>
 
     </html>
+    
