@@ -1,0 +1,165 @@
+.rosebudText {
+    /* font-style permet de modifier directement la police d'un texte */
+    font-style: italic;
+}
+
+.greenText {
+    /* color permet de modifier la couleur de la police */
+    color: lightgreen;
+}
+
+.redText {
+    color: red;
+    color: 
+}
+
+#titleText {
+    /* text-align permet de modifier l'alignement horizontal du texte */
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+#arialText {
+    font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+#blueBackground {
+    /* background-color vous permettra d'ajouter de la couleur de fond sur l'élément ciblé */
+    background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+body {
+    /* background-image permet d'ajouter une image de fond sur l'élément ciblé */
+    background-image: url("../img/nier.png");
+    /* background-size permet de définir quelle taille doit prendre votre fond, réglé sur cover, le fond se contentera de couvrir la zone ciblé */
+    background-size: cover;
+    /* ~BONUS~ background-attachment vous permet de définir quel type d'attachement doit être appliqué sur votre fond, réglé sur fixed, votre fond restera fixé sur l'élément ciblé et restera à sa place même si vous défilez votre page web */
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+#marginText {
+    /* margin permet d'ajouter de la marge externe sur l'élément ciblé, lorsqu'aucune indication de position n'est définie (margin-left, margin-right, margin-top ou margin-bottom) la valeur du margin s'appliquera sur l'ensemble des des positions */
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+#paddingText {
+    /* padding permet d'ajouter des marges internes sur l'élément ciblé, il est à utiliser de la même manière que margin */
+    padding: 10px;
+    background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#firstBlock {
+    background-color: green;
+    /* width permet de rédifinir la largeur d'un élément */
+    width: 80%;
+    /* float permet de faire "flotter" un élément au-dessus des autres et rend des balises block inline, chaque nouvel élément float viendra s'imbriquer à la suite du premier */
+    float: left;
+    /* height permet de redéfinir la hauteur d'un élément, cependant les valeurs en pourcentage n'ont pas d'effet ici. Vous pourrez tout de même utiliser le vh qui est un pourcentage de hauteur */
+    height: 20px;
+}
+
+#secondBlock {
+    background-color: blue;
+    width: 20%;
+    float: left;
+    height: 20px;
+}
+
+#thirdBlock {
+    background-color: red;
+    width: 34%;
+    float: left;
+    height: 50px;
+}
+
+#fourthBlock {
+    background-color: orange;
+    width: 33%;
+    float: left;
+    height: 25px;
+}
+
+#fifthBlock {
+    background-color: grey;
+    width: 33%;
+    float: left;
+    height: 25px;
+}
+
+#sixthBlock {
+    background-color: yellow;
+    width: 22%;
+    float: left;
+    height: 25px;
+}
+
+#seventhBlock {
+    background-color: lightseagreen;
+    width: 22%;
+    float: left;
+    height: 25px;
+}
+
+#eighthBlock {
+    background-color: darkorange;
+    width: 22%;
+    float: left;
+    height: 25px;
+}
+
+#ninthBlock {
+    background-color: darkblue;
+    width: 100%;
+    float: left;
+    height: 100px;
+}

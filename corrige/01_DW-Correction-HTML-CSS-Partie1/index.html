@@ -1,0 +1,139 @@
+<!-- On précise le type du document pour le navigateur -->
+<!DOCTYPE html>
+<!-- On ouvre ensuite notre document HTML en précisant la langue utilisée dans celui-ci grâce à l'attribut "lang" -->
+<!-- On peut également préciser le sens d'écriture du document en utilisant l'attribut "dir" (pour direction) et taper "ltr" (pour le sens d'écriture commun, de gauche à droite, en anglais Left To Right) -->
+<html lang="fr" dir="ltr">
+<!-- On ouvre ensuite l'en-tête de notre document avec la balise "head", il s'agit de l'endroit où se trouvent les informations concernant le document nécessaires au navigateur pour interprêter correctement le corps de celui-ci  -->
+
+<head>
+    <!-- Cette balise meta avec l'attribut charset permet de définir le type de caractères utilisés dans le document, ici nous écrivons en latin commun donc en UTF-8 afin de prendre en compte les accents -->
+    <meta charset="UTF-8">
+    <!-- Cette balise meta va nous permettre d'adapter le contenu au format d'écran sur lequel le document est consulté -->
+    <!-- Pour détailler, la propriété "width" dans l'attribut "content" va permettre d'adapter la largeur du document à la largeur du support de consultation, quand au paramètre "initial-scale", celui-ci permet d'effectuer un zoom sur le document, s'il est établit à 1.0, aucun zoom ne sera fait -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cette balise meta permet d'adapter le contenu aux navigateurs plus restricitfs que sont internet explorer et edge -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- La balise link permet de faire le lien avec un fichier externe, ici je vais avoir besoin d'un fichier de style, je le précise donc dans l'attribut "rel" puis je donne le chemin jusqu'au fichier dans l'attribut "href" -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- La balise title permet de donner un titre au document, et donc de donner un nom à l'onglet qui sera ouvert sur votre navigateur -->
+    <title>Correction Partie 1</title>
+    <!-- Nous avons terminé de décrire les prérequis de notre document, nous pouvons fermer la balise "head" -->
+</head>
+<!-- Maintenant, nous pouvons ouvrir le corps de notre document, et donc commencer à modifier directement notre site -->
+
+<body>
+    <!-- h1, la balise de titre la plus haute à utiliser avant toutes les autres -->
+    <h1>Correction Partie 1</h1>
+    <!-- Comme j'ai déjà placé un h1, je peux créer un sous-titre grâce à une balise h2 -->
+    <h2>Ne pas oublier l'importance de la hiérarchie des titres !</h2>
+    <!-- La balise p, pour écrire du texte dans un bloc -->
+    <p>N'oubliez pas que dans un document, une balise h2 ne doit pas apparaître tant que vous n'avez pas de balise h1, ce
+        qui vaut pour toutes les autres balises ! Une balise h4 ne doit être présente que si vous avez déjà fait appel
+        aux balises h1, h2 et h3</p>
+    <h2>"Mais je voulais avoir un titre plus petit..."</h2>
+    <p>Et bien placez quand même votre titre dans l'ordre de la hiérarchie ! Vous pourrez modifier sa taille en CSS !
+    </p>
+    <!-- Cette balise permet de tracer un trait horizontal sur toute la largeur de l'élément dans lequel elle se trouve, en l'occurence nous nous trouvons à l'intérieur du body, le trait se fera donc sur toute la largeur de l'écran -->
+    <hr>
+    <h3>Exercice 3</h3>
+    <!-- A l'inverse de la balise ul, ol permet de créer une liste ordonnée et donc de retrouver des puces de numérotation -->
+    <ol>
+        <!-- La balise li permet d'ajouter un élément à la liste courante -->
+        <li>Janvier</li>
+        <li>Février</li>
+        <li>Mars</li>
+        <li>Avril</li>
+        <li>Mai</li>
+        <li>Juin</li>
+        <li>Juillet</li>
+        <li>Août</li>
+        <li>Septembre</li>
+        <li>Octobre</li>
+        <li>Novembre</li>
+        <li>Décembre</li>
+    </ol>
+    <hr>
+    <h3>Exercice 4</h3>
+    <!-- On ouvre le tableau grâce à la balise table -->
+    <!-- Accessoirement pour créer les lignes du tableau, nous aurons besoin de CSS, je vais donc attribuer une classe à l'ensemble des éléments du tableau nécessitant des bordures (je l'ai appellée tableAstro ici) -->
+    <!-- Rendez-vous dans le fichier CSS pour des précisions sur les changements de style -->
+    <table class="tableAstro">
+        <!-- Cette balise donne la possibilité de rajouter un titre au tableau -->
+        <caption>Les signes astrologiques</caption>
+        <!-- Nous allons d'abord renseigner les en-têtes du tableau grâce à la balise thead -->
+        <thead>
+            <!-- la balise tr permet d'écrire une nouvelle ligne dans le tableau (en anglais tr = table row) -->
+            <tr>
+                <!-- th permettra de créer une cellule d'en-tête -->
+                <th class="tableAstro">Dates</th>
+                <th class="tableAstro">Signes</th>
+            </tr>
+        </thead>
+        <!-- On peut maintenant passer au contenu du tableau et ce grâce à la balise tbody -->
+        <tbody>
+            <tr>
+                <!-- td permet d'ajouter une simple cellule au tableau -->
+                <td class="tableAstro">22/12 - 19/01</td>
+                <td class="tableAstro">Capricorne</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">20/01 - 19/02</td>
+                <td class="tableAstro">Verseau</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">20/02 - 20/03</td>
+                <td class="tableAstro">Poissons</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">21/03 - 19/04</td>
+                <td class="tableAstro">Bélier</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">20/14 - 20/05</td>
+                <td class="tableAstro">Taureau</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">21/05 - 20/06</td>
+                <td class="tableAstro">Gémeaux</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">21/06 - 22/07</td>
+                <td class="tableAstro">Cancer</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">23/07 - 23/08</td>
+                <td class="tableAstro">Lion</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">24/08 - 22/09</td>
+                <td class="tableAstro">Vierge</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">23/09 - 22/10</td>
+                <td class="tableAstro">Balance</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">23/10 - 21/11</td>
+                <td class="tableAstro">Scorpion</td>
+            </tr>
+            <tr>
+                <td class="tableAstro">22/11 - 21/12</td>
+                <td class="tableAstro">Sagittaire</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>Exercice 5</h3>
+    <h4>Citizen Kane</h4>
+    <!-- Pour mettre rosebud en italique, il existe une balise en HTML, la balise i, qui permet directement de le faire -->
+    <p>Kane, favori pour le poste de gouverneur, tient son discours de campagne. Au début des années 1940 , Charles Foster Kane meurt dans son manoir de Xanadu, un vaste domaine palatial de Floride, en prononçant dans un dernier souffle <i>rosebud</i></p>
+    <hr>
+    <h3>Exercice 6</h3>
+    <!-- La balise a permet de créer un lien vers une autre page, renvoyer sur un élément précis de la page actuelle, ou bien envoyer sur un site externe. Ici le lien est appliqué directement sur l'image -->
+    <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=24944.html">
+        <!-- La balise img permet d'insérer une image, ne pas oublier de renseigner le alt, il permettra de remplacer l'image par ce texte ci celle-ci n'arrive pas à charger, mais il pourra également aider l'assistant vocal des personnes malvoyantes -->
+        <img src="https://p7.storage.canalblog.com/76/36/1349409/121524267.jpg" alt="Affiche de Gladiator">
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Correction Partie 2 Exercice 8 FlexBox</title>
+</head>
+
+<body>
+    <h1>Correction exercice 8 FlexBox</h1>
+    <!-- Comme vous pouvez le constater, l'application de la méthode flex sur cette structure va requérir une bonne isolation de chaque élément -->
+    <!-- Dans un premier temps je crée une div qui aura pour but d'accueillir toute ma structure -->
+    <!-- Par logique, mon placement en flex se fera en colonne puisque je veux que mes futures div se placent les unes en dessous des autres -->
+    <div class="flexColumn">
+        <!-- Cette première div aura pour vocation de m'isoler la première ligne de la forme finale qui contient les rectangles vert et bleu -->
+        <!-- Comme les rectangles vert et bleu viennent l'un après l'autre et pas l'un au-dessous de l'autre, je vais par logique mettre ma position flex en ligne -->
+        <div class="flexRow">
+            <!-- Les 2 divs suivantes sont mes rectangles, les id sur ces divs ne me servent qu'à redimensionner la forme et lui donner une couleur de fond -->
+            <div id="firstBlock"></div>
+            <div id="secondBlock"></div>
+        </div>
+        <!-- Cette div, qui pour rappel, viendra se positionner en-dessous de la div ligne 18, va me permettre d'isoler ma 2e ligne de rectangles comprenant le gros rouge et l'enchevêtrement des 5 rectangles à sa droite -->
+        <!-- Pour bien décomposer la forme finale, cette div en comportera 2 autres, la div représentant le rectangle rouge et la div qui va comprendre l'enchevêtrement des 5 rectangles -->
+        <!-- Comme ces 2 éléments sont l'un à côté de l'autre, la direction du flex se fera en ligne -->
+        <div class="flexRow">
+            <!-- Voici la div pour le rectangle rouge -->
+            <div id="thirdBlock"></div>
+            <!-- Et voici celle qui va comporter les 5 autres -->
+            <!-- En décomposant davantage ces 5 rectangles, on peut les séparer en 2 lignes distinctes, une ligne comprenant 2 rectangles et l'autre 3 -->
+            <!-- Ces 2 lignes étant l'une en-dessous de l'autre, le flex sera en forme de colone -->
+            <div id="internalFlexColumn">
+                <!-- Voici la 1ere div comprenant les 2 premiers rectangles de la première ligne, ces 2 rectangles étant alignés, le flex sera établi en ligne -->
+                <div class="internalFlexRow">
+                    <!-- Les 2 divs suivantes sont mes rectangles, les id sur ces divs ne me servent qu'à redimensionner la forme et lui donner une couleur de fond -->
+                    <div id="fourthBlock"></div>
+                    <div id="fifthBlock"></div>
+                </div>
+                <!-- Voici la 2eme div comprenant les 3 rectangles de la seconde ligne, ces 3 rectangles étant alignés, le flex sera établi en ligne -->
+                <div class="internalFlexRow">
+                    <!-- Les 3 divs suivantes sont mes rectangles, les id sur ces divs ne me servent qu'à redimensionner la forme et lui donner une couleur de fond -->
+                    <div id="sixthBlock"></div>
+                    <div id="seventhBlock"></div>
+                    <div id="eighthBlock"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Pour finir, une dernière div symbolisant le dernier grand rectangle en bas de la structure, situé à l'extérieur de toutes les autres div mais toujours à l'intérieur de la toute première div créée -->
+        <div id="ninthBlock"></div>
+    </div>
+</body>
+
+</html>

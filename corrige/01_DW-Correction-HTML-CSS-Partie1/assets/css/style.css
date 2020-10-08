@@ -1,0 +1,5 @@
+/* Je rappelle ma classe tableAstro et en n'oubliant pas le point pour préciser au navigateur qu'il doit rechercher une classe */
+.tableAstro {
+    /* Je modifie la propriété des bordures en lui donnant une largeur de 1px, puis je fais en sorte d'obtenir un trait plein grâce au paramètre "solid" et pour finir je précise la couleur de la bordure */
+    border: 1px solid black;
+}

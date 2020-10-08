@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Correction Exercices 9 et 10 Partie 2</title>
+</head>
+
+<body>
+    <h1>Exercice 9</h1>
+    <!-- Pour faire un formulaire, nous avons obligatoirement besoin de la balise form, l'attribut action permet de spécifier où seront envoyées les données à la sortie du formulaire, quant à l'attribut method, il permet de spécifier comment seront envoyées les données (visibles ou cachées) -->
+    <form action="" method="">
+        <!-- La balise fieldset va nous permettre de créer une zone à l'intérieur de laquelle nous pouvons rentrer des informations -->
+        <fieldset class="identityFieldset">
+            <!-- ici la balise legend nous permet de créer un titre sur notre fieldset -->
+            <legend class="identityFieldset">Votre identité</legend>
+            <ol>
+                <li>
+                    <!-- la balise label permet de donner un nom visible par les utilisateurs aux champs du formulaire, n'oubliez pas de renseigner l'attribut for à l'identique de l'id à l'intérieur de votre input afin de lier label et input mais également pour aider les assistants vocaux des personnes malvoyantes -->
+                    <label for="firstName">Nom : </label>
+                    <!-- la balise input permet de créer un champ de saisi dans le formulaire -->
+                    <!-- l'attribut type permet de préciser quel type de donnée est attendue dans le formulaire (ici on souhaite recevoir du texte), l'attribut name permet de donner un nom à la donnée qui sera envoyé et donc de la manipuler dans la partie back du site, l'attribut id permet de modifier le champ en CSS mais permet également de lier un input à un label, pour finir, l'attribut placeholder permet de donner une indcation à l'utilisateur de la valuer qu'il doit saisir -->
+                    <input type="text" id="firstName" name="firstName" placeholder="Votre nom">
+                </li>
+                <li>
+                    <label for="lastName">Prénom : </label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Votre prénom">
+                </li>
+                <li>
+                    <label for="mail">Adresse mail : </label>
+                    <input type="email" id="mail" name="mail" placeholder="Votre adresse mail">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset class="deliveryFieldset">
+            <legend class="deliveryFieldset">Adresse de livraison</legend>
+            <ol>
+                <li>
+                    <label for="address">Adresse : </label>
+                    <!-- la balise textarea permet de créer un champ de saisi élargi qui peut contenir plusieurs lignes, les attributs col et row permettent repsectivement de définir le nombre de colonnes et de lignes par défaut qui seront affichées -->
+                    <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                </li>
+                <li>
+                    <label for="zipCode">Code postal : </label>
+                    <input type="text" id="zipCode" name="zipCode" placeholder="Votre code postal">
+                </li>
+                <li>
+                    <label for="city">Ville : </label>
+                    <input type="text" id="city" name="city" placeholder="Votre ville">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset class="paymentFieldset">
+            <legend class="paymentFieldset">Informations de réglement</legend>
+            <ol>
+                <li>
+                    Type de carte bancaire :
+                    <div>
+                        <input type="radio" id="visa" name="bankCard">
+                        <label for="visa">Visa</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="masterCard" name="bankCard">
+                        <label for="masterCard">MasterCard</label>
+                    </div>
+                </li>
+                <li>
+                    <label for="cardNumber">Numéro de carte : </label>
+                    <input type="text" id="carNumber" name="cardNumber" placeholder="Votre numéro de carte bancaire">
+                </li>
+                <li>
+                    <label for="securityCode">Code de sécurité : </label>
+                    <input type="password" id="securityCode" name="securityCode" placeholder="Votre code de sécurité">
+                </li>
+                <li>
+                    <label for="owner">Nom du titulaire : </label>
+                    <input type="text" id="owner" name="owner" placeholder="Nom figurant sur la carte">
+                </li>
+            </ol>
+        </fieldset>
+        <!-- Afin d'envoyer les données, nous avons besoin d'un bouton, la balise button rempli très bien ce rôle, cependant n'oubliez pas de mettre le type submit afin que le bouton puisse soumettre les données -->
+        <!-- Un bouton d'envoi de données dans un formulaire doit se trouver à l'intérieur de ce formulaire, c'est pourquoi dans ce cas il est placé avant la balise de fermeture form -->
+        <button type="submit">J'achète</button>
+    </form>
+    </body>
+
+</html>
