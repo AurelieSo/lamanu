@@ -1,10 +1,4 @@
-.header {
-    background-image: initial;
-    font-family: playfair_display;
-    text-align: center;
-}
-
-
+@media screen and (min-width:640px)
 
 
 @font-face {
@@ -30,13 +24,141 @@
     font-weight: normal;
     font-style: normal;}
 
+h1, h2 {
+    font-family: "playfair_display";
+    
+}
 
-
-
-#conteneur {
+header{
+    /*ajout de l'image de fond*/
+    background-image: url('../images/header.jpg');
+    /*redimensionne de l'image pour qu'elle couvre la page*/
+    background-size: cover;
+    /* définition de la hauteur du header*/
+    height: 368px;
+    /*définition d'un container flexible*/
     display: flex;
+    /*alignement horizontal (centré) des enfants du header uniquement avec flexbox*/
+    justify-content: center;
+    /*alignement vertical (centré) des enfants du header uniquement avec flexbox*/
+    align-items: center;
+    /*définition de la taille de la police*/
+    font-size: 40px;}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /* répartition uniforme avec un espace égal autour des enfants*/
+    font-size: 20px;
+    align-items: center;
+    padding: 12px;
+    margin: 0px;}
+
+a {
+text-decoration: none;
+color: white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+align-items: center;
 }
 
-.title:nth-child(1) {
-    order: 2;
+nav {
+    border: 1px solid rgba(88, 75, 61, 0.993);
+    background-color: rgba(88, 75, 61, 0.993);
+    height: 50px;
+    }
+
+.intro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(88, 75, 61, 0.993);
+    background: -moz-linear-gradient(left, 
+  #fffffe 0%,
+  #e0bc8b 25%,
+  #c9a77c 50%, 
+  #e0bc8b 75%,
+  rgb(255, 254, 254) 100%);
+    padding: 1px 10px 5px 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    width: 75%;
+    text-align: center;
 }
+
+
+.test  {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1500px;
+    align-items: center;
+}
+
+.paris {
+    width: 450px;
+    background-image: url("../images/Paris.jpg");
+    background-size: cover;
+    height: 300px;
+}
+
+.tokyo {
+    width: 450px;
+    background-image: url("../images/japon.jpg");
+    background-size: cover;
+    height: 300px;
+    margin: auto;
+}
+
+.usa {
+    width: 450px;
+    background-image: url("../images/laroute66_bis.jpg");
+    background-size: cover;
+    height: 300px;
+}
+.textDescript {
+    background-color: rgba(250, 249, 246, 0.767);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    width: 30%;
+    height: 280px;
+    color : rgba(88, 75, 61, 0.993)
+}
+
+.titleArticle {
+    font-family: "playfair_display";
+    font-size: 18px;
+    background-color: rgba(88, 75, 61, 0.993);
+    color: white;
+    height: 25px;
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

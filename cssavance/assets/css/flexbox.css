@@ -1,0 +1,25 @@
+#testcolor {
+    display: flex;
+    flex-direction: row;
+}
+
+.box1 {
+    background-color: lemonchiffon;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.box2 {
+    background-color: lightcoral;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.box3 {
+    background-color: lightskyblue;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}

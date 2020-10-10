@@ -5,22 +5,70 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="assets/css/stylesvoyages.css">
+        <link rel="stylesheet" media="screen" href="assets/css/stylesvoyages.css">
         <title>Voyage & Co</title>
     </head>
 
     <body>
-        <header id="conteneur">Voyage & Co  </header>
-           <div>
-    
-           </div>
-           <div>
-             <img src="assets/images/header.jpg" alt="paysage egypte">  
-           </div>
+        <header>
+          <h1>Voyage & Co</h1>
+        </header>
            
-           
-           
+        <!--barre de navigation/Menu-->
+        <nav>
+          <ul>
+              <li><a href="#">Accueil</a></li>
+              <!--a hef="#" le lien renvoit sur la même page-->
+              <li><a href="#blockline">Destinations</a></li>
+              <!--#blockline lien interne vers l'élément blockline dans la même page-->
+              <li><a href="#">Réservations</a></li>
+              <li><a href="#">Contact</a></li>
+          
+            <li>
+            <form action="#" method="POST">
+              <input type="text" name="search" placeholder="Rechercher" />
+              <input type="submit" name="searchButton" value="Rechercher" />
+              <!-- submit pour mettre un bouton-->
+            </form>
+            </li>
+
+            <li><i class="fas fa-bars" id="navIcon"></i></li>
+          </ul>
+        </nav>
       
+        <article class="intro">
+          <h2>Nos bons plans de voyages tout compris</h2> 
+            <p> Partez en séjour tout compris grâce à bons plans de voyages all inclusive. Voyage en Corse tout compris, séjour à Marrakech, vacances aux Caraïbes… Choisissez la destination de vos rêves et envolez-vous pour un séjour tout compris pas cher avec Voyage & Co ! C’est le moment de profiter de nos meilleures offres de voyages tout compris. </p>
+          </article>
+
+        <section class="test">
+          <div><h3 class="titleArticle">PARIS</h3>
+            <div class="paris">
+              <p class="textDescript">Visiter Paris : que faire et que voir lors d’une première visite de la capitale ? Découvrez les activités incontournables !
+              Ah Paris… Capitale française de la gastronomie et de l’amour, Paris jouit d’un patrimoine historique et culturel incomparable.
+              </p>
+            </div>
+          </div>
+      
+          <div><h3 class="titleArticle">TOKYO</h3>
+            <div class="tokyo">
+              <p class="textDescript">Capitale animée du Japon, Tokyo associe les styles ultramodernes et traditionnels, dans un mélange de gratte-ciel aux néons lumineux et de temples anciens. Le somptueux Meiji-jingū est un sanctuaire shinto réputé pour son entrée imposante. 
+              </p>
+            </div>
+          </div>
+        
+          <div><h3 class="titleArticle">ROUTE 66</h3>
+            <div class="usa">
+              <p class="textDescript">La route 66 est une ancienne route américaine qui reliait Chicago à Santa Monica, entre les années 1926 et 1985 aux États-Unis. Sa longueur a beaucoup varié au gré des années et des remaniements de son tracé.        </p>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
 
 
 
