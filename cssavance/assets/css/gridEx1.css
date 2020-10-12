@@ -1,5 +1,48 @@
 .grid9 {
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-template-rows: 
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+    grid-gap: 10px;
+}
+
+.one {
+    background-color: lightcoral;
+}
+
+.two {
+    background-color: lightgreen;
+}
+
+.three {
+    background-color: lightseagreen;
+}
+
+.four {
+    background-color: mediumvioletred;
+}
+
+.five {
+    background-color: orange;
+}
+
+.six {
+    background-color: silver;
+}
+
+.seven {
+    background-color: steelblue;
+}
+
+.eight {
+    background-color: yellow;
+}
+
+.nine {
+    background-color: tomato;
+}
+
+div {
+    color: white;
+    padding-left: 5px;
+    line-height: 50px; 
 }
