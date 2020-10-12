@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "playfair_display";
+    src: url('../../assets/fonts/playfair_display/playfairdisplay-italic-variablefont_wght-webfont.eot');
+    src: url('../../assets/fonts/playfair_display/playfairdisplay-italic-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/playfair_display/playfairdisplay-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/playfair_display/playfairdisplay-italic-variablefont_wght-webfont.woff') format('woff'),
+         url('../../assets/fonts/playfair_display/playfairdisplay-italic-variablefont_wght-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'playfair_display';
+    src: url('../../assets/fonts/playfair_display/playfairdisplay-variablefont_wght-webfont.eot');
+    src: url('../../assets/fonts/playfair_display/playfairdisplay-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/playfair_display/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/playfair_display/playfairdisplay-variablefont_wght-webfont.woff') format('woff'),
+         url('../../assets/fonts/playfair_display/playfairdisplay-variablefont_wght-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+
+h1, h2 {
+    font-family: "playfair_display";
+    
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #100444;
+    opacity: 88%;
+}
+
+header{
+    /*ajout de l'image de fond*/
+    background-image: url('../images/header.jpg');
+    /*redimensionne de l'image pour qu'elle couvre la page*/
+    background-size: cover;
+    /* définition de la hauteur du header*/
+    height: 368px;
+    /*définition d'un container flexible*/
+    display: flex;
+    /*alignement horizontal (centré) des enfants du header uniquement avec flexbox*/
+    justify-content: center;
+    /*alignement vertical (centré) des enfants du header uniquement avec flexbox*/
+    align-items: center;
+    /*définition de la taille de la police*/
+    font-size: 40px;}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /* répartition uniforme avec un espace égal autour des enfants*/
+    font-size: 20px;
+    align-items: center;
+    padding: 12px;
+    margin: 0px;}
+
+a{
+text-decoration: none;
+color: white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+align-items: center;
+}
+
+nav{
+    border: 1px solid #1a0a63;
+    background-color: #1a0a63;
+    height: 50px;
+    }
+
+.intro{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(53, 51, 50, 0.993);
+    background: -moz-linear-gradient(left, 
+  #fffffe 0%,
+  #e9dfa9 25%,
+  #e6d9af 50%, 
+  #e9e0b0 75%,
+  rgb(255, 254, 254) 100%);
+    padding: 1px 10px 5px 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    
+    font-style: italic;
+    width: 75%;
+    text-align: center;
+}
+
+img{
+    width: 90%;
+    height: 250px;
+}
+
+#blockline{
+    display: flex;
+    width: 100%;
+}
+
+.block{
+    text-align: center;
+    margin : 15px 10px;
+    flex: 1 1 0;
+}
+/*Si on souhaite obtenir trois objets de la même taille alors qu'ils ont des tailles initiales différentes,
+ on pourra utiliser :
+flex: 1 1 0;
+Ici, on indique que, lors de la phase de répartition de l'espace, la taille des objets vaut 0 — 
+tout l'espace peut être utilisé. Or, les trois objets ayant tous le même coefficient flex-grow,
+ ils récupèrent chacun la même quantité d'espace. On obtient donc trois objets flexibles de même largeur.*/
+
+p{
+    text-align: justify;
+}
+
+
+.textDescript {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 25px 25px 25px;
+    color :  rgba(53, 51, 50, 0.993);
+}
+
+.titleArticle {
+    font-family: "playfair_display";
+    font-size: 18px;
+    background-color: #f3a30e;
+    color: white;
+    height: 25px;
+    text-align: center;
+    margin: 0 25px 0 25px;
+}
+
+
+#navIcon{
+    display:none;
+}
+
+
+@media screen and (max-width: 480px) {
+h1{
+    font-size: 1.5em;
+}
+
+.titleArticle{
+margin-top: 30px;
+}
+
+a, form{
+    display: none;
+}
+
+#navIcon{
+    display: block;
+    color: white;
+}
+
+#blockline{
+    flex-direction: column;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
