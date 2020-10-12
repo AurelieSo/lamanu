@@ -1,0 +1,77 @@
+/*................. Header ...................*/
+header{
+  /* ajout de l'image de fond */
+  background-image: url('../img/header.jpg');
+  /* redimension de l'img pour qu'elle couvre la page */
+  background-size: cover;
+  /* définition de la hauteur du header */
+  height: 368px;
+  /* définition d'un container flexible */
+  display: flex;
+  /* alignement horizontal (centré) des enfants du header */
+  justify-content: center;
+  /* alignement vertical (centré) des enfants du header */
+  align-items: center;
+  /* définition de la taille de la police */
+  font-size: 40px;
+}
+/*................ Navbar ....................*/
+ul{
+  /* enlève les puces aux items de la liste */
+  list-style-type: none;
+  display: flex;
+  /* alignement horizontal (répartition uniforme dans la ligne avec un espace égal autour des enfants) des enfants du header */
+  justify-content: space-around;
+  font-size: 25px;
+}
+a{
+  /* suppression du texte souligné */
+  text-decoration: none;
+  /* texte en noir */
+  color: #000000;
+}
+/* sur grand écran (supérieur à 992px) l'icone est masqué */
+#navIcon{
+  display: none;
+}
+/*.............. Présentation .................*/
+#presentation{
+  /* marges intérieures de la div */
+  padding: 35px;
+  /* couleur de fond sable */
+  background-color: #E5D0A3;
+}
+#blockLine{
+  display: flex;
+}
+img{
+  width: 75%;
+}
+.block{
+  /* centre les éléments dans la div */
+  text-align: center;
+  /* marges extérieures de la div (y x) */
+  margin: 15px 10px;
+}
+/* texte des paragraphes justifié */
+p{
+  text-align: justify;
+}
+/*................. Media queries ..................*/
+/* Pour une largeur d'écran inférieure à 992px la ligne de bloc ne sera pas alignée horizontalement mais verticalement */
+@media screen and (max-width: 992px){
+  #blockLine{
+    flex-direction: column;
+  }
+}
+/* Pour une largeur d'écran inférieure à 680px... */
+@media screen and (max-width: 680px){
+  /* on masque les éléments de la navbar */
+  a, form{
+    display: none;
+  }
+  /* on affiche l'icone du menu-burger */
+  #navIcon{
+    display: block;
+  }
+}
