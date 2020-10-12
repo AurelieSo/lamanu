@@ -145,10 +145,39 @@ nav {
 }
 
 
+#navIcon{
+    display:none;
+}
 
 
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+.test 
+{flex-direction: column;
+width: 430px;
+height: auto;
+margin-left: auto;
+margin-right: auto;}
+
+.titleArticle {
+margin-top: 30px;
+}
 
 
+a, form{
+    display: none;
+}
+
+#navIcon{
+    display: block;
+    color: white;
+}
+
+
+}
 
 
 

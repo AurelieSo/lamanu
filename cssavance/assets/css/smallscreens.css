@@ -2,30 +2,34 @@
     h1 {
         font-size: 1.5em;
     }
-    .test 
-    {flex-direction: column;
-        width: 430px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;}
-    
-    .titleArticle {
-    margin-top: 30px;
-    }
-    
-nav ul {
+
+nav ul a {
+    width: 100%;
+    flex-direction: column;
     flex-flow: wrap;
-    height: 80px;
-    padding-bottom: 20px;
+    height: auto;
 }
 
-#forsmall {
-    height: 40px;
-    width: 420px;
-    padding-top: 20px;
-    align-items: center;
+.test 
+{flex-direction: column;
+width: 430px;
+height: auto;
+margin-left: auto;
+margin-right: auto;}
 
-    
+.titleArticle {
+margin-top: 30px;
 }
+
+
+a, form{
+    display: none;
+}
+
+#navicon{
+    display: block;
+    color: white;
+}
+
 
 }
