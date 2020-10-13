@@ -1,0 +1,33 @@
+.header {grid-area: header;}
+.menu {grid-area: menu;}
+.main {grid-area: main;}
+.right {grid-area: right;}
+.footer {grid-area: footer;}
+
+.grid-container
+{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    grid-gap: 3px;
+    background-color: red;
+    
+}
+
+.grid-container div {
+    background-color: rgb(245, 186, 186);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .grid-container{
+        grid-template-areas: "header" "menu" "main" "right" "footer";
+        grid-template-columns: 1fr;
+    }
+
+
+    }
