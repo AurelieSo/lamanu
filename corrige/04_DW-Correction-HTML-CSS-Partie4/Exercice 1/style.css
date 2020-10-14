@@ -1,0 +1,74 @@
+body {
+  padding-top: 20px;
+  background: #fbfbfb;
+}
+
+/* items */
+.grid-1 {
+  /* Utilisation des grid */
+  display: grid;
+  /* Les valeurs de grid-template-columns définissent que
+  * « la première colonne doit être large de 150px,
+  * la deuxième de 20px, la troisième de 150px »,
+  * et ainsi de suite pour les 5 colonnes */
+  grid-template-columns: 150px 20px 150px 20px 150px;
+  /*
+  * Les 5 valeurs de grid-template-rows définissent quelque chose de similaire.
+  * Chacune serait auto par défaut, en prenant en compte la hauteur du contenu,
+  * mais on veut être plus précis avec nos gouttières,
+  * en leur donnant une hauteur de 20px, donc on doit lister les 5 lignes */
+  grid-template-rows: auto 20px auto 20px auto;
+}
+.grid-1 div {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  }
+
+/* specific item styles */
+
+.item-1 {
+  background: #b03532;
+  grid-column: 1;
+  grid-row: 1;
+}
+.item-2 {
+  background: #33a8a5;
+  grid-column: 3;
+  grid-row: 1;
+}
+.item-3 {
+  background: #30997a;
+  grid-column: 5;
+  grid-row: 1;
+}
+.item-4 {
+  background: #6a478f;
+  grid-column: 1;
+  grid-row: 3;
+}
+.item-5 {
+  background: #da6f2b;
+  grid-column: 3;
+  grid-row: 3;
+}
+.item-6 {
+  background: #3d8bb1;
+  grid-column: 5;
+  grid-row: 3;
+}
+.item-7 {
+  background: #e03f3f;
+  grid-column: 1;
+  grid-row: 5;
+}
+.item-8 {
+  background: #59a627;
+  grid-column: 3;
+  grid-row: 5;
+}
+.item-9 {
+  background: #4464a1;
+  grid-column: 5;
+  grid-row: 5;
+}
