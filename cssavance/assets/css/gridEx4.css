@@ -63,19 +63,43 @@
 
 .secondLine{
     display: grid;
-    grid-template-columns: 30px 80px 50px 300px ;
+    grid-template-columns: 30px 80px 50px 300px;
     height: 30px;
     align-items: center;
     justify-items: center;
 }
 
 #reduce {
-    width: 100%;
+    width: 90%;
     align-items: center;
-    justify-self: center;
+    justify-self: top;
 }
 #clock{
     width: 60%;
     place-self: end;
     justify-self: end;
 } 
+
+.firstLine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30px;
+    padding: 10px;
+}
+
+#close{
+    display: grid;
+    justify-self: end;
+    align-items: end;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+#close img{
+    width: 70%;
+    justify-self: end;
+    align-self: end;
+    display: grid;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
