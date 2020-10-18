@@ -4,8 +4,7 @@
 .right {grid-area: right;}
 .footer {grid-area: footer;}
 
-.grid-container
-{
+.grid-container {
     display: grid;
     grid-template-areas:
     'header header header header header header'
@@ -13,7 +12,6 @@
     'menu footer footer footer footer footer';
     grid-gap: 3px;
     background-color: red;
-    
 }
 
 .grid-container div {
@@ -24,10 +22,9 @@
 }
 
 @media screen and (max-width: 640px) {
-    .grid-container{
+    .grid-container {
         grid-template-areas: "header" "menu" "main" "right" "footer";
         grid-template-columns: 1fr;
     }
 
-
-    }
+}

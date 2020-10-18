@@ -1,0 +1,12 @@
+.flexContainer{
+    display: flex;
+    background-color: #5ca1f0;
+    align-items: stretch;
+}
+
+.flexContainer div{
+    background-color: #ffffff;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+}
