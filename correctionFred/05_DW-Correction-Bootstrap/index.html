@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Pour intégrer Bootstrap à votre site vous aurez besoin de 2 éléments, le premier est la bibliothèque en ligne du style, à inclure directement dans le head AVANT TOUT CSS PERSONNALISE ! -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Correction Bootstrap</title>
+</head>
+
+<body>
+  <h1>Exercice 1</h1>
+  <!-- Le container-fluid nous permet de créer une zone de travail prenant l'entièreté de la place disponible de l'élément parent (l'élément qui contient le container) -->
+  <div class="container-fluid">
+    <!-- la class row permet de créer une nouvelle ligne sur la grille de bootstrap, bg-primary permet de donner un fond bleu à l'élément, text-white permet de rendre le texte blanc et text-center permet de centrer le texte par rapport à l'élément parent -->
+    <div class="row bg-primary text-white text-center">
+      <!-- les classes col permettent de diviser la ligne sur laquelle vous travaillez et donc de faciliter grandement la disposition des éléments -->
+      <!-- ajouter un déterminant du style xl, md, lg ou sm permet de donner à votre élément d'autres proportions en fonction du format d'écran sur lequel votre site est consulté -->
+      <div class="col-md-4 border right white">
+        <p>Bloc 1</p>
+      </div>
+      <div class="col-md-4 border right white">
+        <p>Bloc 2</p>
+      </div>
+      <div class="col-md-4 border right white">
+        <p>Bloc 3</p>
+      </div>
+    </div>
+    <hr>
+    <h1>Exercice 2</h1>
+    <div class="row bg-info text-white text-right">
+      <div class="col-md-3 col-sm-6 border right white">
+        <p>Bloc 1</p>
+      </div>
+      <div class="col-md-3 col-sm-6 border right white">
+        <p>Bloc 2</p>
+      </div>
+      <div class="col-md-3 col-sm-6 border right white">
+        <p>Bloc 3</p>
+      </div>
+      <div class="col-md-3 col-sm-6 border right white">
+        <p>Bloc 4</p>
+      </div>
+    </div>
+    <div class="row bg-warning text-white">
+      <div class="col-md-3 col-sm-12 border right white">
+        <p>Bloc 5</p>
+      </div>
+      <div class="col-md-2 col-sm-4 border right white">
+        <p>Bloc 6</p>
+      </div>
+      <div class="col-md-2 col-sm-4 border right white">
+        <p>Bloc 7</p>
+      </div>
+      <div class="col-md-2 col-sm-4 border right white">
+        <p>Bloc 8</p>
+      </div>
+      <div class="col-md-3 col-sm-12 border right white">
+        <p>Bloc 9</p>
+      </div>
+    </div>
+    <hr>
+    <h1>Exercice 3</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- le jumbotron permet de créer un encart possédant un fond. Ajouter jumbotron-fluid lui donnera le droit d'occuper l'entièreté de l'espace disponible donné par l'élément parent -->
+        <div class="jumbotron jumbotron-fluid bg-info">
+          <h1 class="display-4">Bonjour</h1>
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Alert permet de créer un bandeau d'alerte, souvent utilisé pour les formulaires à la suite d'une réussite ou de l'échec d'envoi des données -->
+        <div class="alert alert-success" role="alert">
+          <p> A simple success alert—check it out!</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="alert alert-danger" role="alert">
+          <p>A simple danger alert—check it out!</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h1>Exercice 4</h1>
+
+    <div class="row">
+      <div class="col-md-12">
+        <!-- les navbar de bootstrap vous permettent de créer rapidement une barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Entreprise</a>
+          <!-- ce bouton sert à afficher l'icone du menu burger une fois que le site passe dans sa version responsive -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Informations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+  <hr>
+  <h1>Exercice 5</h1>
+  <div class="container">
+    <div class="row mb-3 bg-info">
+      <div class="col-md-4 p-3">
+        <p>Texte de notre choix</p>
+      </div>
+      <div class="col-md-4 p-3">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo a iusto harum minus sed similique et,
+          obcaecati fugit quidem aspernatur quis porro cupiditate esse praesentium magnam magni omnis recusandae illum!
+        </p>
+      </div>
+      <div class="col-md-4 p-3">
+        <p>Deuxième texte libre</p>
+      </div>
+    </div>
+    <div class="row bg-warning">
+      <div class="col-md-4 p-3">
+        <p>Deuxième texte libre</p>
+      </div>
+      <div class="col-md-4 p-3">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur placeat alias nostrum. Sint ut minus
+          voluptatem error ex nam sed aliquid consequuntur, eum iste blanditiis modi rerum exercitationem magni!</p>
+      </div>
+      <div class="col-md-4 p-3">
+        <p>Texte de notre choix</p>
+      </div>
+    </div>
+    <hr>
+    <h1>Exercice 6</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- les cards de bootstrap vous permettent de créer des encarts relativement simples à manipuler tout en donnant un visuel attractif -->
+        <div class="card text-center">
+          <div class="card-body">
+            <h1>Formations by "La Manu"</h1>
+            <!-- les badges de bootstrap sont souvent utilisés pour signaler à l'utilisateur une nouveauté, comme par exemple un badge que l'on pourrait trouver au-dessus d'un panier pour indiquer le nombre d'articles se trouvant à l'intérieur -->
+            <div class="badge badge-info">
+              <p>C#</p>
+            </div>
+            <div class="badge badge-info">
+              <p>.NET</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h1>Exercice 7</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <h2>La Manu Le Havre</h2>
+            <p>L'école des métiers du numérique</p>
+            <!-- le bouton suivant permet de déclencher l'arrivée d'une boîte modal. Ce bouton est lié par le data-target à la modal portant l'id exampleModal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Launch demo modal
+            </button>
+            <!-- cette div représente la modal. Elle porte l'id exampleModal et sera activée lors du clic sur le bouton lié -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">La Manu Le Havre</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body bg-primary">
+                    <p>https://lamanu.fr/le-havre</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Bootstrap a besoin de scripts pour faire tourner la majorité de ses éléments interactifs, n'oubliez donc pas de les importer A LA FIN DU BODY pour gagner en vitesse de réponse du navigateur -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

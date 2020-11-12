@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <title>Correction Exercices JQuery</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html">Exercices JQuery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Partie 1 : Les bases
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../partie1/ex1.html">Exercice 1</a>
+            <a class="dropdown-item" href="../partie1/ex2.html">Exercice 2</a>
+            <a class="dropdown-item" href="../partie1/ex3.html">Exercice 3</a>
+            <a class="dropdown-item" href="../partie1/ex4.html">Exercice 4</a>
+            <a class="dropdown-item" href="../partie1/ex5.html">Exercice 5</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Partie 2 : Les évènements 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="ex1.html">Exercice 1</a>
+            <a class="dropdown-item" href="ex2.html">Exercice 2</a>
+            <a class="dropdown-item" href="ex3.html">Exercice 3</a>
+            <a class="dropdown-item" href="ex4.html">Exercice 4</a>
+            <a class="dropdown-item" href="ex5.html">Exercice 5</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Partie 3 : TP
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../partie3/tp1.html">TP 1</a>
+            <a class="dropdown-item" href="../partie3/tp2.html">TP 2</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container text-center">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Consignes de l'exercice 8</h1>
+        <p class="lead">Afficher ou masquer le paragraphe text au clic des boutons.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <button class="btn btn-success m-2" type="button" name="button" id="show" href="#">Afficher</button>
+    <button class="btn btn-danger m-2" type="button" name="button" id="hide" href="#">Masquer</button>
+    <p id="text">
+      Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+    </p>
+  </div>
+
+  <script src="../assets/js/jquery-3.2.1.js"></script>
+  <script>
+  // Cela permet d'empêcher tout code jQuery de s'exécuter avant que le document ne soit chargé (est prêt).
+  $(function(){
+    $('#show').click(function(){
+      $('#text').show();
+    })
+    $('#hide').click(function(){
+      $('#text').hide();
+    })
+  });
+  </script>
+  <!-- SCRIPT BOOTSTRAP -->
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

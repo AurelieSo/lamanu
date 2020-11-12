@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header{
+  /* J'attribue une image de fond sur ma balise header */
+  background-image: url("../img/header.jpg");
+  /* Je lui donne une hauteur fixe pour faire apparaitre une partie de l'image*/
+  height: 360px;
+  /* Je lui demande de couvrir l'ensemble de ma page */
+  background-size: cover;
+  /* Je rend mon élément parent flexible */
+  display: flex;
+  /* Mes enfants seront centré horizontalement par rapport à mon parent */
+  justify-content: center;
+  /* Mes enfants seront centré verticalement par rapport à mon parent */
+  align-items: center;
+}
+#VandCoTitle{
+  /* Je donne une taille de 50px à mon titre */
+  font-size: 50px;
+  /* J'attribue une police chargée de googlefonts */
+  font-family: 'Architects Daughter', cursive;
+}
+.colorLetter{
+  color: #CB4E45;
+}
+/*----------NAVBAR----------*/
+#navbarResponsive{
+  display: none;
+}
+#navbar ul{
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#navbar li{
+  list-style-type: none;
+}
+#navbar a{
+  text-decoration: none;
+  color: #CB4E45;
+  font-size: 18px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+/* Changement de la couleur de la police au survol de la souris */
+#navbar a:hover{
+  color: black;
+}
+i{
+  color: #CB4E45;
+}
+i:hover{
+  color: black;
+}
+input{
+  padding: 4px;
+  border-radius: 4px;
+}
+button{
+  border: 0;
+  background-color: white;
+}
+#navbar form{
+  display: flex;
+  align-items: center;
+}
+
+/*----------SECTION Presentation----------*/
+#presentation{
+  background-color: #CB4E46;
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+#presentation p{
+  color: white;
+  font-family: Arial;
+  width: 65%;
+  text-align: center;
+}
+
+/*----------SECTION Article----------*/
+#travels{
+  display: flex;
+  flex-direction: row;
+}
+#travels img{
+  width: 100%;
+}
+.travelBox{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 5%;
+}
+#travels h2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #CB4E46;
+  text-align: center;
+}
