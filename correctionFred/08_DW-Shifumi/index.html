@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Shifumi</title>
+</head>
+<body>
+  <!-- HEADER : Logo + consignes -->
+  <div class="header">
+    <div id="head">
+      <div class="hyphen"></div>
+      <h1>Shifumi</h1>
+      <div class="hyphen"></div>
+    </div>
+    <div id="instructions">
+      <h2>Consignes</h2>
+      <p>Faites glisser l'image correspondant à votre choix sur le carré blanc ! </br>Vous avez 10 chances de gagner !</p>
+    </div>
+  </div><!-- Fermeture div .header -->
+<!-- BODY DU JEU -->
+  <div class="container">
+    <!-- ELEMENTS DU JEU -->
+    <div id="game">
+      <!-- Les possibilité du joueur -->
+      <div id="gamePossibility">
+        <div class="choice answer" id="rockChoice">
+          <img class="img" src="https://www.pierrefeuilleciseaux.fr/wp-content/uploads/sites/5/2013/10/pierre-150x150.png" alt="pierre" />
+        </div>
+        <div class="choice answer" id="paperChoice">
+          <img class="img" src="https://www.pierrefeuilleciseaux.fr/wp-content/uploads/sites/5/2013/10/feuille-300x300.png" alt="feuille" />
+        </div>
+        <div class="choice answer" id="scissorsChoice">
+          <img class="img" src="https://www.pierrefeuilleciseaux.fr/wp-content/uploads/sites/5/2013/10/ciseaux-300x300.png" alt="ciseaux" />
+        </div>
+      </div><!-- Fermeture div .gamePossibility -->
+      <!-- Les blocs de validation des choix ainsi que les résultats -->
+      <div id="validateChoice">
+        <h2>Joueur</h2>
+        <div id="droppableGamer"></div>
+        <div class="results">
+          <h3>Victoires : <strong><span id="gamerWin">0</span>/<span class="numberGames">0</span></strong></h3>
+        </div>
+        <div class="separator"></div>
+        <h2>Ordinateur</h2>
+        <div id="droppableComputer"></div>
+        <div class="results">
+          <h3>Victoires : <strong><span id="computerWin">0</span>/<span class="numberGames">0</span></strong></h3>
+        </div>
+      </div><!-- Fermeture div .validateChoice -->
+      <!-- Le pourcentage de réussite -->
+      <div id="percent">
+        <h3>Pourcentage de réussite :</h3>
+        <div id="percentWin"></div>
+      </div><!-- Fermeture div #percent -->
+    </div> <!-- Fermeture div #game -->
+    <!-- Bloc résultat : Il est caché au chargement de la page et apparrait une fois les 10 parties jouées -->
+    <div id="result">
+      <h2>Fin de la partie !</h2>
+      <div id="endGame">
+        <!-- bloc qui contiendra le message QUAND LE JEU EST FINI-->
+        <div id="messageResult"></div>
+        <a href="index.html" type="button" name="button">Rejouer !</a>
+      </div>
+    </div><!-- Fermeture div #result -->
+  </div> <!-- Fermeture div .container -->
+
+<!-- SCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

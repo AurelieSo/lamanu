@@ -1,0 +1,180 @@
+/* Je définies des variables avec les couleurs et les typos spécifiques au projet */
+:root {
+  --titleColor: white;
+  --titleTypo : 'Amatic SC', cursive;
+  --textTypo:'Open Sans Condensed', sans-serif;
+  --bgColor: #377382;
+  --colorYellow: #FE9F05;
+}
+/* RESET CSS */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* POUR L'ENSEMBLE DE LA PAGE */
+body{
+  background-color: var(--bgColor);
+  font-family: var(--textTypo);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  padding: 2.5rem;
+}
+.container{
+  max-width: 1140px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+  font-family: var(--titleTypo);
+  font-size: 7rem;
+  color : var(--titleColor);
+  margin: 1rem 0;
+}
+h2{
+  font-family: var(--titleTypo);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--colorYellow);
+  margin: 0;
+}
+h3{
+  font-style: var(--textTypo);
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+a{
+  background-color: var(--bgColor);
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  background-color: var(--colorYellow);
+}
+
+/* HEADER : Logo + consignes */
+.header{
+  /* je place les enfants direct de .header en ligne (soit #head et #instructions)*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+/* bloc contenant le titre -SHIFUMI- */
+#head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Style des traits jaunes entourant le titre -SHIFUMI- */
+.hyphen{
+  border: 3px solid var(--colorYellow);
+  width: 25px;
+  height: 0;
+}
+/* Consignes du jeu */
+#instructions{
+  background-color: white;
+  padding: 1.5rem;
+}
+/* #instructions p : Je cible tous les p se trouvant dans la div #instructions */
+#instructions p{
+  font-size: 1.5rem;
+  color: var(--bgColor);
+}
+
+/* ELEMENTS DU JEU */
+/* Tous les éléments du jeu sont placés en ligne et sont répartis automatiquement sur l'ensemble de la largeur */
+#game{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+/* carré dans lequel le joueur doit déposer son choix */
+#droppableGamer {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  margin: 1rem;
+}
+/* carré dans lequel apparaitra le choix de l'ordinateur à l'évènement drop */
+#droppableComputer{
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+  margin: 1rem;
+}
+/* redimenssionnement des images */
+.img{
+  width: 150px;
+  height: 150px;
+}
+/* J'ajoute des marges externes pour séparer visuellement les 3 images */
+.choice{
+  margin: 10px;
+}
+#validateChoice{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/* style de la ligne séparant la zone du joueur et la zone de l'ordinateur */
+.separator{
+  border: 2px solid white;
+  border-color: var(--colorYellow);
+}
+/* Le pourcentage de réussite */
+#percent{
+  display: flex;
+  flex-direction: column;
+}
+#percent h3{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#percentWin{
+  display: inline-block;
+  line-height: 2.3em;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color: var(--bgColor);
+  text-align: center;
+  font-size: 6rem;
+}
+/* Bloc résultat */
+#result{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  color: var(--bgColor);
+  padding: 2rem;
+}
+#result h2{
+  font-size: 3rem;
+}
+#endGame{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#messageResult{
+  font-size: 2rem;
+}
